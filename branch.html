@@ -4,12 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f3f3f3;
+            padding: 100px;
+        }
+        header{
+               background: linear-gradient(to right, red,yellow, blue);
+               color: #f9f9f9;
+               padding: 8px;
+        }
+        h2{
+            background: linear-gradient(to right, red, blue);
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+        
+        section{
+            padding: 50px 0;
+        }
+         .cards {
+    display: flex;
+      align-items: center;
+    text-align: center;
+    column-gap: 10px;
+    padding: 0 20px; 
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+        .card{
+        scroll-snap-align: center;
+            width: 300px;
+
+        }
+        img{
+            margin-top: .5rem;
+           width:300px;
+           border-radius: 5px;
+        }
+        fieldset{
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        #area{
+            field-sizing: content;
+            min-width:15rem;
+            max-width: 20rem;
+            min-height: 3rem;
+            max-height: 15rem;
+        }
+        input{
+            padding: 5px;
+            border:0;
+        }
+    </style>
 </head>
 <body>
+    <header>PRACTICING BRANCH MERGE AND RELATED CONCEPTS</header>
     <main>
-        <header>PRACTICING BRANCH MERGE AND RELATED CONCEPTS</header>
         <section>
             <h2>i am edding this header 2nd times </h2>
+            <div class="cards">
+                <div class="card image_1"><span>card_1</span>
+                    <img src="image1.jpg" alt="">
+                </div> 
+                <div class="card image_2"><span>card_2</span>
+                <img src="image2.jpg" alt=""></div>
+                <div class="card image_3"><span>card_3</span>
+                    <img src="image3.jpg" alt="">
+                </div>
+                <div class="card image_4"><span>card_4</span>
+                    <img src="image4.jpg" alt="">
+                </div>
+                <div class="card image_5"><span>card_5</span>
+                    <img src="image5.jpg" alt="">
+                </div>
+                <div class="card image_6"><span>card_6</span>
+                    <img src="image6.jpg" alt="">
+                </div>
+                <div class="card image_7"><span>card_7</span>
+                    <img src="image7.jpg" alt="">
+                </div>
+                <div class="card image_8"><span>card_8</span>
+                    <img src="image8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <form action="">
+                
+                <h2>registration form</h2>
+                <fieldset>
+                    <legend>fill the form bellow</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="your name" required><br><br>
+                   <label for="password">Password</label>
+                   <input type="password" min="8" max="16" placeholder="password" required><br><br>
+                    <label>Gender</label><br><br>
+                    <input type="checkbox" checked>
+                    <label for="Gender">female</label>
+                    <input type="checkbox">
+                    <label for="Gender">male</label><br><br>
+
+                    <span>select course</span>
+                   <select name="" id="choose">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JS</option>
+                <option value="">React</option>
+               </select><br><br>
+                   <textarea name="textarea" id="area"></textarea>
+
+                </fieldset>
+                
+            </form>
         </section>
     </main>
 </body>
